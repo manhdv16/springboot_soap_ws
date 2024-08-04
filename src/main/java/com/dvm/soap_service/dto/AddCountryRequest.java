@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="countryInfo" type="{http://spring.io/guides/gs-producing-web-service}countryInfo"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name"
+    "countryInfo"
 })
-@XmlRootElement(name = "getCountryRequest")
-public class GetCountryRequest {
+@XmlRootElement(name = "addCountryRequest")
+public class AddCountryRequest {
 
     @XmlElement(required = true)
-    protected String name;
+    protected CountryInfo countryInfo;
 
     /**
-     * Gets the value of the name property.
+     * Gets the value of the countryInfo property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link CountryInfo }
      *     
      */
-    public String getName() {
-        return name;
+    public CountryInfo getCountryInfo() {
+        return countryInfo;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the value of the countryInfo property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link CountryInfo }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setCountryInfo(CountryInfo value) {
+        this.countryInfo = value;
     }
 
 }
