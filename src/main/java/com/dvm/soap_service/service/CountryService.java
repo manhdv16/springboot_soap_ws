@@ -8,4 +8,5 @@ public interface CountryService {
     Country findByName(String name);
     void save(CountryInfo countryInfo);
     void delete(int id);
+    void update(CountryInfo countryInfo);
 }

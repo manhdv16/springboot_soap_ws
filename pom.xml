@@ -107,10 +107,13 @@
                 </executions>
                 <configuration>
                     <sources>
-                        <source>${project.basedir}/src/main/resources/countries.xsd</source>
+<!--                        <source>${project.basedir}/src/main/resources/countries.xsd</source>-->
+                        <source>${project.basedir}/src/main/resources/employee.xsd</source>
+
                     </sources>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-                    <packageName>com.dvm.soap_service.dto</packageName>
+<!--                    <packageName>com.dvm.soap_service.dto</packageName>-->
+                    <packageName>com.dvm.soap_service.endpoint.dto</packageName>
                     <clearOutputDir>false</clearOutputDir>
                 </configuration>
             </plugin>
