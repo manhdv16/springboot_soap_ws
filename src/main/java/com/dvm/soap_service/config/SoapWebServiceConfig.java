@@ -22,20 +22,35 @@ public class SoapWebServiceConfig {
         return new ServletRegistrationBean(servlet, "/ws/*");
     }
 
-
     @Bean
     public XsdSchema userSchema() {
-        return new SimpleXsdSchema(new ClassPathResource("countries.xsd"));
+        return new SimpleXsdSchema(new ClassPathResource("info.xsd"));
     }
 
-    @Bean
+    @Bean(name = "info")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema userSchema) {
 
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setSchema(userSchema);
         definition.setLocationUri("/ws");
-        definition.setPortTypeName("CountryServicePort");
-        definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+        definition.setPortTypeName("InfoServicePort");
+        definition.setTargetNamespace("http://dancuquocgia.bca");
         return definition;
     }
+
+//    @Bean
+//    public XsdSchema userSchema() {
+//        return new SimpleXsdSchema(new ClassPathResource("countries.xsd"));
+//    }
+//
+//    @Bean
+//    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema userSchema) {
+//
+//        DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
+//        definition.setSchema(userSchema);
+//        definition.setLocationUri("/ws");
+//        definition.setPortTypeName("CountryServicePort");
+//        definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+//        return definition;
+//    }
 }

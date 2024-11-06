@@ -108,7 +108,7 @@
                 <configuration>
                     <sources>
 <!--                        <source>${project.basedir}/src/main/resources/countries.xsd</source>-->
-                        <source>${project.basedir}/src/main/resources/employee.xsd</source>
+                        <source>${project.basedir}/src/main/resources/info.xsd</source>
 
                     </sources>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
