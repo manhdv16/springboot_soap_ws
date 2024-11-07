@@ -5,5 +5,9 @@
 // Generated on: 2024.08.07 at 03:56:41 PM ICT 
 //
 
-@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://spring.io/guides/gs-producing-web-service", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@XmlSchema(namespace = "http://spring.io/guides/gs-producing-web-service",
+        elementFormDefault = XmlNsForm.QUALIFIED)
 package com.dvm.soap_service.dto;
+
+
+import javax.xml.bind.annotation.*;

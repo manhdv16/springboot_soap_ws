@@ -8,10 +8,11 @@
 
 package com.dvm.soap_service.dto;
 
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlType;
+//import jakarta.xml.bind.annotation.XmlEnum;
+//import jakarta.xml.bind.annotation.XmlType;
 
 
+import javax.xml.bind.annotation.*;
 /**
  * <p>Java class for currency.
  * 

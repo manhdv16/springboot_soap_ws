@@ -8,8 +8,9 @@
 
 package com.dvm.soap_service.dto;
 
-import jakarta.xml.bind.annotation.XmlRegistry;
+//import jakarta.xml.bind.annotation.XmlRegistry;
 
+import javax.xml.bind.annotation.*;
 
 /**
  * This object contains factory methods for each 

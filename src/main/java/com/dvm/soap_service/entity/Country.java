@@ -2,11 +2,12 @@ package com.dvm.soap_service.entity;
 
 
 import com.dvm.soap_service.dto.Currency;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "country")
