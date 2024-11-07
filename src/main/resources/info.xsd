@@ -24,4 +24,26 @@
         </xs:complexType>
     </xs:element>
 
+
+    <xs:element name="XacThucThongTinCongDan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MaYeuCau" type="xs:string"/>
+                <xs:element name="MaDichVu" type="xs:string"/>
+                <xs:element name="MaCanBo" type="xs:string"/>
+                <xs:element name="SoDinhDanh" type="xs:string"/>
+                <xs:element name="SoCMND" type="xs:string"/>
+                <xs:element name="HoVaTen" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="KetQuaXacThuc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TonTai" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

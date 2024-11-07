@@ -48,8 +48,8 @@ import jakarta.xml.bind.annotation.XmlType;
     "soCMND",
     "hoVaTen"
 })
-@XmlRootElement(name = "XacThucThongTinCongDanRequest")
-public class XacThucThongTinCongDanRequest {
+@XmlRootElement(name = "XacThucThongTinCongDan")
+public class XacThucThongTinCongDan {
 
     @XmlElement(name = "MaYeuCau", required = true)
     protected String maYeuCau;

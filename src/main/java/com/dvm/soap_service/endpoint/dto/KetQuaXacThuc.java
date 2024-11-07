@@ -38,8 +38,8 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "tonTai"
 })
-@XmlRootElement(name = "XacThucThongTinCongDanResponse")
-public class XacThucThongTinCongDanResponse {
+@XmlRootElement(name = "KetQuaXacThuc")
+public class KetQuaXacThuc {
 
     @XmlElement(name = "TonTai")
     protected boolean tonTai;
